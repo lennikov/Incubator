@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.796,=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.781,=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.475,=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.637,D:\_w\_2020\incubator\main.h=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.008,=D:\_w\_2020\incubator\comport.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.490,=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.132,D:\_w\_2020\incubator\chart.h=D:\_w\_2020\incubator\Unit2.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.954,D:\_w\_2020\incubator\Unit2.h=D:\_w\_2020\incubator\about.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.132,D:\_w\_2020\incubator\chart.cpp=D:\_w\_2020\incubator\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.954,D:\_w\_2020\incubator\Unit2.dfm=D:\_w\_2020\incubator\about.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.175,=D:\_w\_2020\incubator\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.522,=D:\_w\_2020\incubator\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.954,D:\_w\_2020\incubator\Unit2.cpp=D:\_w\_2020\incubator\about.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.132,D:\_w\_2020\incubator\chart.dfm=D:\_w\_2020\incubator\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.155,=D:\_w\_2020\incubator\SendEmail.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.637,D:\_w\_2020\incubator\main.dfm=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.946,D:\_w\_2020\incubator\Unit1.h=D:\_w\_2020\incubator\frame.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.946,D:\_w\_2020\incubator\Unit1.dfm=D:\_w\_2020\incubator\frame.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.720,D:\_w\_2020\incubator\incubator.cbproj=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.355,D:\_w\_2020\incubator\incubatorPCH1.h=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.126,D:\_w\_2020\incubator\Unit1.h=D:\_w\_2020\incubator\DeleteOldFile.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.946,D:\_w\_2020\incubator\Unit1.cpp=D:\_w\_2020\incubator\frame.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.335,=D:\_w\_2020\incubator\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.108,=D:\_w\_2020\incubator\WorkThread.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.637,D:\_w\_2020\incubator\main.cpp=C:\Users\Николай\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.965,=D:\_w\_2020\incubator\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.126,D:\_w\_2020\incubator\Unit1.cpp=D:\_w\_2020\incubator\DeleteOldFile.cpp</Transaction>
+  </Transactions>
+</BorlandProject>
