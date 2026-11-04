@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#116d5d"><title>Incubator Monitor</title>
+  <style>{{INLINE_STYLE}}</style>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-icon">◉</span><div>Incubator<span>LAB MONITOR</span></div></div>
+      <div class="nav-label">WORKSPACE</div>
+      <a class="nav-item selected" href="#overview"><span>▦</span> Overview</a>
+      <a class="nav-item" href="#history"><span>↗</span> Trends &amp; archive</a>
+      <a class="nav-item" href="#activity"><span>≡</span> Alarm activity</a>
+      <button id="settings-open" class="nav-item"><span>⚙</span> Settings</button>
+      <div class="side-footer"><span class="tiny-dot"></span> Local workspace<p>Temperature · CO₂ · Water<br>Read-only device monitoring</p></div>
+    </aside>
+    <main>
+      <header id="overview"><div><div class="eyebrow">CULTURE ENVIRONMENT</div><h1>Incubator overview</h1><p class="subtitle">A clear view of the conditions that matter.</p></div><div id="clock" class="clock"></div></header>
+      <div class="toolbar"><label>Connection mode <select id="mode"><option value="bridge">Background service</option><option value="direct">Chrome serial</option><option value="demo">Demo</option></select></label><div class="toolbar-actions"><button id="notifications">Enable sound &amp; alerts</button><button id="run" class="primary">Start monitoring</button></div></div>
+      <div id="notice" class="notice" role="status"></div>
+      <div class="summary"><div><span class="tiny-dot" id="run-dot"></span><strong id="run-label">Stopped</strong><span id="unit-count"></span></div><span id="archive-label"></span></div>
+      <section id="cards" class="cards" aria-label="Incubator readings"></section>
+      <section id="history" class="panel trends">
+        <div class="panel-heading"><div><div class="eyebrow">ENVIRONMENT OVER TIME</div><h2>Trends &amp; archive</h2></div><div class="chart-controls"><select id="chart-unit" aria-label="Incubator for chart"></select><input id="chart-date" type="date" aria-label="Archive date"><button id="export">Export CSV</button></div></div>
+        <div class="chart-legend"><span><i class="legend-temp"></i> Temperature, °C</span><span><i class="legend-co2"></i> CO₂, %</span><span class="muted">Shaded area: configured range · gaps: missing readings</span></div>
+        <div id="charts" class="chart-area"></div><div id="chart-foot" class="chart-foot"></div>
+      </section>
+      <section id="activity" class="panel"><div class="panel-heading"><div><div class="eyebrow">EVENT LOG</div><h2>Alarm activity</h2></div><span id="email-status" class="muted"></span></div><div id="events"></div></section>
+      <footer id="footer-note">Local monitoring · No cloud account required</footer>
+    </main>
+  </div>
+  <dialog id="settings"><form id="settings-form"><div class="dialog-heading"><div><div class="eyebrow">MONITOR CONFIGURATION</div><h2>Settings</h2></div><button type="button" id="settings-close" aria-label="Close settings">✕</button></div>
+    <p class="muted">Thresholds trigger monitoring alarms. They do not change the incubator’s setpoints.</p>
+    <div class="settings-section"><h3>Sampling &amp; storage</h3><div class="form-grid three"><label>Read interval, seconds<input name="pollSeconds" type="number" min="1" max="3600" step="1" required></label><label>Save interval, minutes<input name="saveMinutes" type="number" min="0.01" max="1440" step="0.01" required></label><label>Archive retention, days<input name="retentionDays" type="number" min="1" max="3650" step="1" required></label></div></div>
+    <div class="settings-section"><h3>Alarm delays, minutes</h3><p class="muted">A condition must persist across valid readings for its delay. Zero alerts on the first reading.</p><div id="delay-inputs" class="form-grid three"></div></div>
+    <div class="settings-section"><div class="panel-heading"><h3>Incubators</h3><button type="button" id="add-unit">+ Add incubator</button></div><div id="unit-inputs"></div><datalist id="ports"></datalist><p id="ports-note" class="muted"></p></div>
+    <div class="notice subtle" id="smtp-note">Email alarms use the background service. Configure SMTP in config.json and store the password in an environment variable; see README.</div>
+    <div class="dialog-actions"><button type="button" id="settings-cancel">Cancel</button><button type="submit" class="primary">Save settings</button></div>
+  </form></dialog>
+  <div id="toast" role="alert" class="toast" hidden></div>
+  <script type="module">{{INLINE_SCRIPT}}</script>
+</body></html>
